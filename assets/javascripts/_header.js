@@ -17,7 +17,6 @@ function closeMenu () {
 }
 
 function menuOpenClose () {
-  console.log("yuo");
   if ( menuOpen == 0 ) {
     // if menu is not open already
     openMenu();
@@ -35,7 +34,7 @@ window.onresize = function () {
   var windowWidth = window.innerWidth;
   closeMenu();
 
-  if ( windowWidth > 1000 ) {
+  if ( windowWidth > 1100 ) {
     navUl.style.top = 0;
   }
 }

@@ -16,7 +16,7 @@
   <div class="header__container">
     <section class="header__logo">
         <a href="<?php echo site_url (); ?>" class="header__logo__link">
-            <img src="<?php echo get_template_directory_uri (); ?>/assets/images/alvin-locksmith-logo-small.png"
+            <img class="b-lazy" data-src="<?php echo get_template_directory_uri (); ?>/assets/images/alvin-locksmith-logo-small.png"
                  alt="Alvin Locksmith Logo" class="header__logo__image">
         </a>
     </section>

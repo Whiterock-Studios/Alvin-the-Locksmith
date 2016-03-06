@@ -1,5 +1,5 @@
 .home__section__1 {
-  padding:100px 15px;
+  padding:125px 15px;
   text-align: center;
   color:#fff;
   text-transform: uppercase;
@@ -53,7 +53,7 @@
 }
 
 .home__section__2__heading {
-  padding:80px 0 0px 0;
+  padding:60px 0 0px 0;
   line-height: 100%;
 }
 
@@ -89,6 +89,7 @@
 .home__section__2__box__image {
   margin:0;
   padding:0;
+  height: 45px;
 }
 
 .home__section__2__box__heading {
@@ -111,7 +112,7 @@
 
 .home__section__3__text, .home__section__3__image {
   @include span-columns(1 of 2);
-  padding:40px 0;
+  padding:40px 0 60px 0;
 
   @include media(max-width $tablet){
     @include span-columns(1 of 1);
@@ -184,7 +185,7 @@
     left:0;
     top:50%;
     height: 10px;
-    transform: translate(0,-250%);
+    transform: translate(0,-30px);
   }
 
   @include media(max-width $tablet){

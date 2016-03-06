@@ -5,7 +5,7 @@ if (have_posts() ):
     the_post();
 
     $attachment_id = get_field('section_1_background_image');
-    $size = "wide";
+    $size = "full";
     $image = wp_get_attachment_image_src( $attachment_id, $size );
 
     ?>
