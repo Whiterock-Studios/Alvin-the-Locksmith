@@ -1,0 +1,101 @@
+.footer {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color:#fff;
+  background: $dark-grey;
+}
+
+.footer__container {
+  @include outer-container(1200px);
+}
+
+.footer__contact, .footer__nav {
+  @include span-columns(1 of 2);
+  padding: 40px 15px;
+
+  @include media(max-width $tablet){
+    @include span-columns(1 of 1);
+  }
+}
+
+.footer__contact form, .footer__contact div {
+  position: static!important;
+}
+
+.footer__contact__input input, .footer__contact__input textarea {
+  background:$dark-grey!important;
+  border-radius: 0!important;
+  border-width: 2px!important;
+}
+
+.footer__contact__button {
+  float:right;
+  background: none;
+  border:none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding:0;
+}
+
+.footer__nav {
+
+  ul {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+
+    li {
+      display: block;
+
+      a {
+        @extend %tran;
+        display: block;
+        color:inherit;
+        text-decoration:none;
+        padding:10px 0;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+// lower footer from here on
+.footer__lower {
+  background: darken($dark-grey, 5%);
+  padding:10px 0;
+
+}
+
+.footer__lower__branding {
+  float:left;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer__lower__branding__logo {
+    height: 40px;
+}
+
+.footer__lower__whiterock {
+  float: right;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer__lower__whiterock__link {
+  @extend %tran;
+  display: inline-block;
+  color:inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 10px 0;
+
+  &:hover {
+    color:$red;
+  }
+}

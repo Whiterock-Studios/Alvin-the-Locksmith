@@ -1,0 +1,255 @@
+.home__section__1 {
+  padding:100px 15px;
+  text-align: center;
+  color:#fff;
+  text-transform: uppercase;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  @include media(max-width $phone){
+    padding:50px 15px;
+  }
+}
+
+.home__section__1__container {
+  // @include outer-container(400px);
+  // background:red;
+}
+
+.home__section__1__body {
+  background: rgba($red, .8);
+  padding:10px 30px;
+  display: inline-block;
+}
+
+.home__section__1__body__tagline {
+  font-style: italic;
+  font-size:0.9em;
+}
+
+.home__section__1__buttons {
+
+  .alvin__button {
+    margin: 40px 20px 0 20px;
+  }
+
+  @include media(max-width $phone) {
+    margin-top: 40px;
+
+    .alvin__button {
+      display: block;
+      margin: 40px 0 20px 0;
+    }
+  }
+}
+
+.home__section__2 {
+  text-align: center;
+  padding:0 15px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.home__section__2__heading {
+  padding:80px 0 0px 0;
+  line-height: 100%;
+}
+
+.home__section__2__container {
+  @include outer-container(1200px);
+}
+
+.home__section__2__box {
+  @include span-columns(1 of 3);
+  background: $blue;
+  color: #fff;
+  padding:30px 15px;
+  position: relative;
+  margin-top:40px;
+  margin-bottom:40px;
+
+  &:nth-of-type(even) {
+    background: $red;
+  }
+
+  @include media (max-width $tablet) {
+    @include span-columns(1 of 1);
+    margin-bottom: 40px;
+  }
+}
+
+.home__section__2__box__inner {
+  display: block;
+  padding: 0;
+  margin:0;
+}
+
+.home__section__2__box__image {
+  margin:0;
+  padding:0;
+}
+
+.home__section__2__box__heading {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.home__section__2__box__body {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.home__section__3 {
+  padding: 0 15px;
+}
+
+.home__section__3__container {
+  @include outer-container;
+}
+
+.home__section__3__text, .home__section__3__image {
+  @include span-columns(1 of 2);
+  padding:40px 0;
+
+  @include media(max-width $tablet){
+    @include span-columns(1 of 1);
+  }
+}
+
+// .home__section__3__heading {
+//
+// }
+
+.home__section__3__body {
+  margin:0;
+}
+
+.home__section__3__button {
+  margin:20px 20px 0 0;
+
+  @include media(max-width $phone) {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+.home__section__3__image {
+
+  img {
+    max-width: 100%;
+    float:left;
+  }
+}
+
+.home__section__4 {
+  padding: 80px 15px;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.home__section__4__heading {
+  padding:0;
+  margin:0 0 40px 0;
+}
+
+.home__section__4__list {
+  @include outer-container(1000px);
+  padding: 0;
+  margin: 0 auto;
+}
+
+.home__section__4__list__item {
+  width:50%;
+  float: left;
+  clear: none;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  list-style-type: none;
+  position: relative;
+  margin: 40px 0;
+  padding-left:100px;
+
+  &:after {
+    content: url('../images/tick.png');
+    position: absolute;
+    left:0;
+    top:50%;
+    height: 10px;
+    transform: translate(0,-250%);
+  }
+
+  @include media(max-width $tablet){
+    width: 100%;
+  }
+}
+
+.emergency {
+  color: #fff;
+  text-transform: uppercase;
+  padding:0 15px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.emergency--red {
+  background: $red;
+}
+
+.emergency--blue {
+  background: $blue;
+}
+
+.emergency__text {
+    position: relative;
+    padding:10px 0;
+    margin: 0;
+    display: inline-block;
+
+    a {
+      color:inherit;
+      text-decoration: none;
+    }
+
+    &:after {
+      content: url('../images/speach-bubble.png');
+      position: absolute;
+      left:110%;
+      top:0;
+    }
+}
+
+.emergency__text--medium {
+  font-size: 1.5em;
+
+  &:after {
+    top: -80px;
+  }
+}
+
+.emergency__text--large {
+  font-size: 1.5em;
+  margin:40px 0 0 0;
+
+  &:after {
+    top:-20px;
+  }
+}
+
+.emergency__text--small {
+  margin:0 0 40px 0;
+
+  a {
+    color:inherit;
+    text-decoration: none;
+  }
+}

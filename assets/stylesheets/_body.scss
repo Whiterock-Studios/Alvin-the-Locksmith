@@ -1,0 +1,77 @@
+html {
+	overflow-y: scroll;
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: $dark-grey;
+	font-size: 1em;
+	line-height: 1.5;
+	padding: 85px 0 0 0;
+	margin: 0;
+
+	@include media(max-width 1000px) {
+		padding-bottom: 45px;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing:2px;
+	font-weight: normal;
+}
+
+.alvin__button {
+	@extend %tran;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	padding:15px;
+	line-height: 1em;
+	letter-spacing: 2px;
+}
+
+.alvin__button--white {
+	background: #fff;
+	color:$blue;
+	margin-top:20px;
+
+	&:hover {
+		background: $blue;
+		color:#fff;
+	}
+}
+
+.alvin__button--transparent--white {
+	background: none;
+	border:solid 2px #fff;
+	color:#fff;
+
+	&:hover {
+		background: #fff;
+		color: $blue;
+	}
+}
+
+.alvin__button--red {
+	border:solid 2px #fff;
+	background: $red;
+	color: #fff;
+
+	&:hover {
+		background: #fff;
+		color: $red;
+		border-color: $red;
+	}
+}
+
+.section__key-hole {
+	position: absolute;
+	top:0;
+	left:50%;
+	transform: translate(-50%,-50%);
+}

@@ -1,0 +1,175 @@
+.header {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background: #fff;
+  border-bottom: solid 5px $blue;
+  font-family: 'Lato', sans-serif;
+  padding:0 15px;
+  font-size: 0.95em;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 0px rgba(38,41,49,0.4);
+  z-index: 999;
+}
+
+.header__container {
+  @include outer-container(1200px);
+}
+
+.header__logo {
+  float:left;
+}
+
+.header__logo__link {
+  display: inline-block;
+  padding:10px 0;
+}
+
+.header__logo__image {
+  height: 60px
+}
+
+.header__nav {
+  float:right;
+  text-transform: uppercase;
+  position: relative;
+
+  ul {
+    @extend %tran--long;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+
+    li {
+      display: inline-block;
+      padding:0;
+      margin: 0;
+
+      a {
+        @extend %tran;
+        display:block;
+        text-decoration: none;
+        color:inherit;
+        padding:28px 20px;
+        border-top:solid 5px #fff;
+        margin: 0;
+
+        &:hover {
+          border-color: $red;
+        }
+      }
+    }
+  }
+}
+
+.header__nav__burger {
+  @extend %tran;
+  padding:35px 0 35px 35px;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  top:0;
+  right:15px;
+}
+
+.header__nav__burger__line {
+  @extend %tran;
+  background:$dark-grey;
+  display: block;
+  height: 2px;
+  width: 30px;
+  margin-bottom:5px;
+}
+
+.header__nav__burger__line--3 {
+  margin-bottom: 0;
+}
+
+.header__nav__emergency {
+  background: #fff;
+  position: absolute;
+  display: inline-block;
+  top:calc(100% + 7px);
+  right:0;
+  color:$red;
+  text-transform: uppercase;
+  padding:0 15px;
+  line-height: 1em;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 0px rgba(38,41,49,0.1);
+  letter-spacing: 1px;
+  z-index: 10;
+
+  @include media(max-width 1000px) {
+      position: fixed;
+      bottom:0;
+      left:0;
+      top:auto;
+      text-align: center;
+  }
+
+}
+
+.header__nav__emergency__tel {
+  text-decoration: none;
+  color:inherit;
+}
+
+@include media(max-width 400px) {
+  .header__nav__emergency__emergency {
+    display: none;
+  }
+}
+
+// hide the normal menu for mobile / tablet and show the burger
+@include media(max-width 1000px) {
+  .header__nav ul {
+    position: fixed;
+    top:-100%;
+    left:0;
+    height:100%;
+    width:100%;
+    background: $dark-grey;
+    color:$red;
+    z-index: 9;
+    padding:50px 15px;
+    overflow-y: auto;
+
+    li {
+      display: block;
+
+      a {
+        border: none;
+        text-align: center;
+        padding: 30px 0;
+      }
+    }
+  }
+
+  .header__nav__burger {
+    display: block;
+  }
+}
+
+// burger open styles below
+.header__nav__burger--open {
+  padding-top: 40px;
+
+  .header__nav__burger__line {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+    background: $red;
+  }
+
+  .header__nav__burger__line--2 {
+    margin-top:-2px;
+    transform:translateX(100px);
+  }
+
+  .header__nav__burger__line--3 {
+    transform: rotate(-45deg);
+    margin: -2px 0 0 0;
+  }
+}

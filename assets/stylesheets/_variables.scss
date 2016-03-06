@@ -1,0 +1,14 @@
+$blue: #7395ff;
+$red: #ff5858;
+$dark-grey: #262931;
+
+$tablet: 768px;
+$phone: 400px;
+
+%tran {
+  transition: 0.3s;
+}
+
+%tran--long {
+  transition: 0.8s;
+}
