@@ -16,7 +16,6 @@
   <div class="footer__container">
     <div class="footer__lower__branding">
       <img class="footer__lower__branding__logo b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/alvin-locksmith-logo-small.png" alt="Alvin Locksmith Logo " />
-      <img class="footer__lower__branding__logo b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mla-logo.jpg" alt="Master Locksmith Association Logo" />
     </div>
 
     <div class="footer__lower__whiterock">

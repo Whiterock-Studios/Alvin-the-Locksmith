@@ -104,6 +104,14 @@ if (have_posts() ):
   </div>
 </section>
 
+<section class="home__section__promotion">
+  <a href="http://www.ultion-lock.co.uk/customersupport/" target="_blank">
+    <img class="b-lazy home__section__promotion__ultion" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ultion-banner.jpg" alt="Ultion Lock Banner">
+  </a>
+  
+  <img class="b-lazy home__section__promotion__mla" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mla-logo.jpg" alt="Master Locksmith Association Logo" />
+</section>
+
 <section class="emergency emergency--red">
   <p class="emergency__text emergency__text--medium">
     <?php

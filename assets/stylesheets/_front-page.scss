@@ -1,3 +1,31 @@
+.home__section__promotion {
+  @include outer_container(1200px);
+  @include media(max-width 1200px) {
+
+    img {
+      padding: 0 15px 40px 15px;
+      margin: 0 auto;
+      display: block;
+      clear: both;
+      float: none;
+    }
+  }
+}
+
+.home__section__promotion__ultion {
+  display: inline-block;
+  float:left;
+  padding: 0 0 60px 0;
+  max-width: 100%;
+}
+
+.home__section__promotion__mla {
+  display: inline-block;
+  float:right;
+  padding:0 0 60px 0;
+  max-width: 100%;
+}
+
 .home__section__1 {
   padding:125px 15px;
   text-align: center;
@@ -18,7 +46,7 @@
 }
 
 .home__section__1__body {
-  background: rgba($red, .8);
+  background: rgba($red, .9);
   padding:10px 30px;
   display: inline-block;
 }
