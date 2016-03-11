@@ -15,9 +15,7 @@ jQuery(document).ready(function($) {
 			$('.home__section__2__box').each(function() {
 				if ($(this).outerHeight() < $biggest){
 					$newSpacer = ($biggest - $(this).outerHeight());
-					$halfNewSpacer = $newSpacer / 2;
-					$(this).find('.home__section__2__box__inner').css('margin-bottom',  $halfNewSpacer + 'px');
-					$(this).find('.home__section__2__box__inner').css('margin-top',  $halfNewSpacer + 'px');
+					$(this).find('.alvin__button').css('margin-top',  $newSpacer + 'px');
 				}
 			});
 
