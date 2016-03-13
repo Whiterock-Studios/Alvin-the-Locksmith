@@ -55,7 +55,7 @@ if (have_posts() ):
         $image = wp_get_attachment_image_src( $attachment_id, $size );
 
         ?>
-        <div class="home__section__2__box">
+        <div class="home__section__2__box equal__box">
           <div class="home__section__2__box__inner">
             <img class="home__section__2__box__image b-lazy" data-src="<?php echo $image[0]; ?>" alt="<?php echo the_sub_field("heading"); ?>" />
             <h1 class="home__section__2__box__heading"><?php echo the_sub_field("heading"); ?></h1>
