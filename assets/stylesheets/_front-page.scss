@@ -47,13 +47,19 @@
 
 .home__section__1__body {
   background: rgba($red, .9);
-  padding:10px 30px;
+  padding:20px 30px;
   display: inline-block;
+  box-shadow: 0px 0px 10px 0px rgba(38,41,49,0.4);
+}
+
+.home__section__1__body__heading {
+  margin: 0;
 }
 
 .home__section__1__body__tagline {
   font-style: italic;
   font-size:0.9em;
+  margin:20px 0 0 0;
 }
 
 .home__section__1__buttons {
@@ -97,6 +103,7 @@
   position: relative;
   margin-top:40px;
   margin-bottom:40px;
+  box-shadow: 0px 0px 10px 0px rgba(38,41,49,0.1);
 
   &:nth-of-type(even) {
     background: $red;

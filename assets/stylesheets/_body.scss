@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: $dark-grey;
 	font-size: 1em;
 	line-height: 1.5;
@@ -18,10 +18,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
 	letter-spacing:2px;
 	font-weight: normal;
+}
+
+a {
+	color: $blue;
 }
 
 .alvin__button {
@@ -82,6 +85,6 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: 0;
 }
 
-.b-lazy.b-loaded {
+.b-loaded {
    opacity: 1;
 }
