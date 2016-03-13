@@ -1,0 +1,24 @@
+.services {
+	text-align: center;
+}
+
+.services__box {
+	@extend .home__section__2__box;
+	// text-align: center;
+}
+
+.services__box__inner {
+	@extend .home__section__2__box__inner;
+}
+
+.services__box__image {
+  @extend .home__section__2__box__image;
+}
+
+.services__box__heading {
+	 @extend .home__section__2__box__heading;
+}
+
+.services__box__body {
+	@extend .home__section__2__box__body;
+}
