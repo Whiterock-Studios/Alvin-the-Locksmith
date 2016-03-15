@@ -2,7 +2,6 @@
 <html <?php language_attributes (); ?>>
 <head>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <meta charset="<?php bloginfo ( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
