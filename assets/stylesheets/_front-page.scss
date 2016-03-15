@@ -68,7 +68,7 @@
     margin: 40px 20px 0 20px;
   }
 
-  @include media(max-width $phone) {
+  @include media(max-width 440px) {
     margin-top: 40px;
 
     .alvin__button {

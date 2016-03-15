@@ -1,10 +1,4 @@
-<?php
-get_header(); 
-
-	if ( have_posts() ) :
-		while ( have_posts() ) :
-			the_post();
-?>
+<?php get_header(); ?>
 
 <section class="page__title__container">
 	<h1 class="page__title">
@@ -16,11 +10,4 @@ get_header();
 	<p>Sorry, the page you are looking for can't be found! Please click <a href="<?php echo site_url(); ?>">here</a> to go home or use the navigation above.</p>
 </section>
 
-<?php
-
-		endwhile;
-	endif;
-
-get_footer();
-
-?>
+<?php get_footer(); ?>
