@@ -19,7 +19,7 @@
     </div>
 
     <div class="footer__lower__whiterock">
-        <a class="footer__lower__whiterock__link" href="http://whiterockstudios.co.uk">Crated with <i class="fa fa-heart"></i> by Whiterock</a>
+        <a class="footer__lower__whiterock__link" href="http://whiterockstudios.co.uk" target="_blank">Crated with <i class="fa fa-heart"></i> by Whiterock</a>
     </div>
   </div>
 </section>

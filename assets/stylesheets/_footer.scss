@@ -86,6 +86,12 @@
   float: right;
   display: inline-block;
   padding: 0 15px;
+
+  @include media(max-width 400px) {
+    margin-top: 10px;
+    display: block;
+    float: left;
+  }
 }
 
 .footer__lower__whiterock__link {
