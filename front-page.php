@@ -109,7 +109,7 @@ if (have_posts() ):
     <img class="b-lazy home__section__promotion__ultion" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/ultion-banner.jpg" alt="Ultion Lock Banner">
   </a>
   
-  <img class="b-lazy home__section__promotion__mla" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/mla-logo.jpg" alt="Master Locksmith Association Logo" />
+  <img class="b-lazy home__section__promotion__cla" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/cla-logo.jpg" alt="Certified Locksmith Association Logo" />
 </section>
 
 <section class="emergency emergency--red">
